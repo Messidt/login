@@ -2,6 +2,12 @@
 
     session_start();
 
+    if(!isset($_SESSION['login']) || !isset($_SESSION['password'])) 
+    {
+        header('Location: index.php');
+        exit();
+    }
+
     require_once 'connect.php';
 
     $connection = @new mysqli($host, $db_user, $db_password, $db_name);
