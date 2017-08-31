@@ -1,5 +1,10 @@
 <?PHP 
     session_start();
+    
+    if (!isset($_SESSION['logged_in'])) {
+        header('Location: index.php');
+        exit();
+    }
 ?>
 
 
@@ -19,6 +24,7 @@
     echo "<p>Liczba krów: ".$_SESSION['cows']."</p>";
     echo "<p>Plony: ".$_SESSION['crops']."</p>";
     echo "<p>Email: ".$_SESSION['email']."</p>";
+    echo '<a href="logout.php">Log out</a>';
     
    ?>
 </body>
