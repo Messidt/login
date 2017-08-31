@@ -22,7 +22,10 @@
             $num_users = $result->num_rows;
             if ($num_users > 0) 
             {
+                $_SESSION['logged_in'] = true;
+                
                 $row = $result->fetch_assoc();
+                $_SESSION['id'] = $row['id']; 
                 $_SESSION['user'] = $row['user'];
                 $_SESSION['wood'] = $row['wood'];
                 $_SESSION['cows'] = $row['cows'];
