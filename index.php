@@ -1,3 +1,9 @@
+<?PHP
+    session_start();
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -15,6 +21,14 @@
        <input type="password" id='password' name='password'>
        <input type="submit" value='Log In'>
    </form>
+   
+   <?PHP
+    
+    if(isset($_SESSION['error'])) {
+        echo $_SESSION['error'];
+    }
+    
+    ?>
     
 </body>
 </html>

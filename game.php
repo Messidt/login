@@ -1,7 +1,5 @@
-<?PHP
-    
+<?PHP 
     session_start();
-
 ?>
 
 
@@ -16,7 +14,11 @@
 <body>
    <?PHP
    
-    echo "Witaj ".$_SESSION['user']."!";
+    echo "<h2>Witaj ".$_SESSION['user']."!</h2>";
+    echo "<p>Drewno: ".$_SESSION['wood']."</p>";
+    echo "<p>Liczba krów: ".$_SESSION['cows']."</p>";
+    echo "<p>Plony: ".$_SESSION['crops']."</p>";
+    echo "<p>Email: ".$_SESSION['email']."</p>";
     
    ?>
 </body>

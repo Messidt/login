@@ -20,14 +20,25 @@
         if($result = @$connection->query($query))
         {
             $num_users = $result->num_rows;
-            if ($num_users > 0) {
-                
+            if ($num_users > 0) 
+            {
                 $row = $result->fetch_assoc();
                 $_SESSION['user'] = $row['user'];
+                $_SESSION['wood'] = $row['wood'];
+                $_SESSION['cows'] = $row['cows'];
+                $_SESSION['crops'] = $row['crops'];
+                $_SESSION['email'] = $row['email'];
+                
+                unset($_SESSION['error']);
                 
                 $result->free();
                 
                 header('Location: game.php');
+            }
+            else
+            {
+               $_SESSION['error'] = '<p style="color:red;">Incorrect username or password</p>';
+               header('Location: index.php');
             }
         }
         
