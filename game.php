@@ -1,6 +1,7 @@
 <?PHP 
     session_start();
     
+    // If user isn't logged in he cannot access to game.php using url adress;
     if (!isset($_SESSION['logged_in'])) {
         header('Location: index.php');
         exit();

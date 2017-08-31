@@ -1,6 +1,7 @@
 <?PHP
     session_start();
 
+    // If user is logged in we automatically redirect him to game.php
     if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] == true) 
     {
         header('Location: game.php');
@@ -30,6 +31,7 @@
    
    <?PHP
     
+    // If login or password is incorrect, warning message is shown
     if(isset($_SESSION['error'])) {
         echo $_SESSION['error'];
     }
