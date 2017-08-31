@@ -9,8 +9,8 @@
 <body>
    <h1>Please log in</h1>
    <form action="login.php" method='post'>
-       <label for="user">User name:</label>
-       <input type="text" id='user' name='user'>
+       <label for="login">User name:</label>
+       <input type="text" id='login' name='login'>
        <label for="password">Password:</label>
        <input type="password" id='password' name='password'>
        <input type="submit" value='Log In'>
