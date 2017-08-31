@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+}
+
+.container {
+    width: 25%;
+    height: 32vh;
+    background-color: #353535;
+    margin: 15% auto 0 auto;
+    color: white;
+    border-radius: 5px;
+}
+
+.container h1 {
+    text-align: center;
+    font-size: 3rem;
+    padding: 15px 0 20px 0;
+    border-bottom: 1px solid white;
+}
+
+.container label {
+    text-indent: -10000px;
+    height: 0;
+}
+
+.container input {
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.container label, input {
+    display: block;
+    width: 50%;
+    margin: 2% auto 0 auto;
+}
+
+.container input[type='text'] {
+    background-image: url(../images/user.png);
+    background-position: 5px center;
+    background-repeat: no-repeat;
+}
+
+.container input[type='password'] {
+    background-image: url(../images/pass.png);
+    background-position: 5px center;
+    background-repeat: no-repeat;
+}
+
+.container input[type='submit'] {
+    width: 25%;
+    background-color: #008000;
+    border-radius: 7px;
+    margin-top: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.container input[type='submit']:hover {
+    background: #079607;
+    cursor: pointer;
+}
+
+.container p {
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: 5px;
+}
