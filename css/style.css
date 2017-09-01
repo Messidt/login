@@ -13,27 +13,34 @@ body {
 }
 
 .container {
-    width: 25%;
-    height: 32vh;
-    background-color: #353535;
+    width: 400px;
+    height: 300px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#404c4b+0,34373a+100 */
+    background: #404c4b; /* Old browsers */
+    background: -moz-linear-gradient(top, #404c4b 0%, #34373a 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #404c4b 0%,#34373a 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #404c4b 0%,#34373a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#404c4b', endColorstr='#34373a',GradientType=0 ); /* IE6-9 */
     margin: 15% auto 0 auto;
     color: white;
     border-radius: 5px;
 }
 
-.container h1 {
+/* index.php styles */
+
+h1, h2 {
     text-align: center;
     font-size: 3rem;
     padding: 15px 0 20px 0;
     border-bottom: 1px solid white;
 }
 
-.container label {
+label {
     text-indent: -10000px;
     height: 0;
 }
 
-.container input {
+input {
     height: 40px;
     border-radius: 10px;
     border: none;
@@ -41,25 +48,25 @@ body {
     font-size: 2rem;
 }
 
-.container label, input {
+label, input {
     display: block;
     width: 50%;
     margin: 2% auto 0 auto;
 }
 
-.container input[type='text'] {
+input[type='text'] {
     background-image: url(../images/user.png);
     background-position: 5px center;
     background-repeat: no-repeat;
 }
 
-.container input[type='password'] {
+input[type='password'] {
     background-image: url(../images/pass.png);
     background-position: 5px center;
     background-repeat: no-repeat;
 }
 
-.container input[type='submit'] {
+input[type='submit'] {
     width: 25%;
     background-color: #008000;
     border-radius: 7px;
@@ -68,13 +75,35 @@ body {
     color: white;
 }
 
-.container input[type='submit']:hover {
+input[type='submit']:hover {
     background: #079607;
     cursor: pointer;
 }
 
-.container p {
+p#log-error {
     text-align: center;
     font-size: 1.5rem;
     padding-top: 5px;
 }
+
+p {
+    font-size: 2rem;
+    text-align: center;
+    padding: 2%;
+}
+
+
+a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-align: right;
+    font-size: 1.2rem;
+    margin-right: 10px;
+    margin-top: 55px;
+}
+
+a:hover {
+    color: gray;
+}
+

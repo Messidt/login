@@ -35,7 +35,7 @@
     
         // If login or password is incorrect, warning message is shown
         if(isset($_SESSION['error'])) {
-            echo "<p>".$_SESSION['error']."</p>";
+            echo "<p id='log-error'>".$_SESSION['error']."</p>";
         }
     
        ?>
